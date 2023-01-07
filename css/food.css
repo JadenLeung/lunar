@@ -1,0 +1,277 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.food_week_header {
+    color: white;
+}
+.food_description_wrapper {
+    background-image: url('../images/Food_Page/aapi-dishes2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    font-size: 20px;
+    grid-column: 2 / 4;
+    width:100%;
+    margin-top: 20px;
+}
+.opacity_wrapper{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* General Formatting */
+.blurb {
+    max-width: 800px;
+    text-align: center;
+    justify-self: center;
+    color: white;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+.grid {
+    height: 100%;
+    flex-grow: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    background-color: var(--orange_2);
+}
+.flex {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.learn_more {
+    text-decoration: none;
+    background-color: var(--orange_3);
+    color: var(--light);
+
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+    align-self: center;
+    cursor: pointer;
+}
+
+/* Headers */
+.main_description_wrapper {
+    grid-column: 2 / 4;
+
+    font-size: 20px;
+}
+.summary_description_wrapper {
+    grid-column: 3;
+    min-height: var(--img_height);
+
+    background-color: var(--light);
+}
+
+/* Call to Action */
+.call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
+    width: 100%;
+    max-width: 1210px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.socials {
+    margin: 20px;
+    background-color: var(--orange_1);
+}
+.learn_more h3 a {
+    color: var(--light);
+}
+
+/* Discussion Wrapper */
+.panel_discussion_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 20px;
+}
+.panelist_description {
+    font-size: var(--small_text);
+    color: black;
+}
+
+/* Movie Setup */
+.row_2 {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+}
+.film_img {
+    justify-self: center;
+
+    height: var(--img_height);
+}
+
+/* Movie Information */
+.history_blurb {
+    color: var(--orange_1);
+}
+.description {
+    text-align: left;
+    margin-bottom: 10px;
+}
+.image_description_wrapper {
+    text-align: right;
+    grid-column: 3;
+    min-height:var(--image-height);
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+  }
+
+@media screen and (max-width: 1050px){
+    .row_2 {
+        flex-direction: column;
+    }
+
+    .film_img {
+        width: 30%;
+        height: auto;
+
+        align-self: center;
+    }
+
+    body {
+        min-height: 100vh;
+        height: auto;
+    }
+}
+
+.cookbook_wrapper{
+    grid-column: 3;
+    min-height: var(--img_height);
+    background-color: var(--orange_2);
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px; 
+}
+.learn_more {
+    text-decoration: none;
+    background-color: var(--orange_1);
+    color: var(--light);
+
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+    align-self: center;
+    cursor: pointer;
+}
+@media screen and (max-width: 1050px){
+    .row_2 {
+        flex-direction: column;
+    }
+
+    .film_img {
+        width: 30%;
+        height: auto;
+
+        align-self: center;
+    }
+}
+
+/* Food Panel */
+.panel_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    background-color: var(--logo_orange);
+}
+
+.panelist_header {
+    color: var(--dark);
+    font-size: var(--lg_text);
+}
+
+.panelist_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    padding: 20px;
+    background-color: var(--logo_orange);
+    color: var(--dark);
+}
+.panelist {
+    max-width: 400px;
+    max-height: 700px;
+    border: 1px solid var(--dark);
+    background-color: var(--light);
+    border-radius: 20px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.panelist_width {
+    max-width: 300px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 1350px) {
+    .panelist_wrapper {
+        flex-direction: column;
+    }
+    .panelist {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .panelist_width {
+        min-width: 0px;
+        width: 80%;
+    }
+}
+
+/* Row 4 */
+.sponsor_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    color: var(--orange_1);
+}
+
+.sponsor_title {
+    font-size: var(--lg_text);
+    margin-bottom: 15px;
+}
+.sponsor_description {
+    font-size: var(--med_text);
+}

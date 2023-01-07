@@ -1,0 +1,227 @@
+.clustrmaps-map-control {
+    display: none;
+}
+
+/* General Formatting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+/* Navbar CSS */
+.navbar_wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 20fr 1fr;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    
+    margin-bottom: 20px;
+}
+
+.navbar {
+    position: relative;
+    grid-column: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    box-sizing: content-box;
+    padding: 0;
+    text-align: center;
+    width: 100%;   
+}
+
+.navbar_links_list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.navbar_link {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.navbar_link a {
+    transition: all 0.3s ease 0s;
+
+    float: left;
+    color: var(--orange_2);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: var(--small_text);
+    font-weight: bold;
+}
+.navbar_link a:hover {
+    color: var(--logo_orange);
+    text-decoration: underline;
+    font-size: 15.5px;
+}
+.active a {
+    border-bottom: 3px solid var(--orange_2);
+    font-weight: bolder;
+}
+
+.navbar_item {
+    display: inline;
+}
+.navbar_title {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: var(--lg_text);
+
+    cursor: pointer;
+
+    color: #003459;
+}
+.logo {
+    width: var(--logo_size);
+}
+.navbar_title a {
+    text-decoration: none;
+    color: var(--text_color);
+    align-self: center;
+    margin-left: 10px;
+}
+
+/* Creating a dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    z-index: 1;
+    top: 100%;
+}
+.dropdown-content a {
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Creating Mobile Menu UI */
+#mobile_menu {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 998;
+    width: 100%;
+    min-height: 100%;
+    background: var(--logo_orange);
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+
+    opacity: 0;
+    top: -100%;
+}
+.mobile_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.mobile_navbar_link a {
+    color: var(--white);
+    width: 100%;
+
+    font-size: var(--med_text);
+    font-weight: 400;
+    text-align: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mobile_navbar_link a:hover {
+    color: var(--orange_3);
+    font-size: 27px;
+}
+
+.icon {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+.nav {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  }
+/* Creating mobile menu button UI */
+.mobile_icon {
+    display: none;
+    z-index: 999;
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--dark);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media (min-width: 1051px) {
+    .mobile_icon {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        cursor: pointer;
+    }
+    #mobile_menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1050px) {
+    .navbar_links_list {
+        display: none;
+    }
+
+    #mobile_menu {
+        display: grid;
+    }
+
+    .navbar_title {
+        font-size: 12px;
+    }
+    .navbar {
+        width: auto;
+    }
+}
