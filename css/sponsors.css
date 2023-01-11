@@ -1,0 +1,13 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sponsor_wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--logo_orange_2);
+    color: var(--light);
+}
