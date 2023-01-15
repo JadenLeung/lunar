@@ -5,9 +5,11 @@
   }
 
 .sponsor_image {
-    height: 70%;
-    width:70%;
+    width: 60%;
+height: 50%;
+
 }
+
  .sponsor_column {
         float: left;
         width: 33.33%;
