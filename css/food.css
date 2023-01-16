@@ -21,6 +21,20 @@ body {
     width:100%;
     margin-top: 20px;
 }
+
+.magic_description_wrapper {
+    background-image: url('../images/eddie_photo2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    font-size: 20px;
+    grid-column: 2 / 4;
+    width:100%;
+    margin-top: 20px;
+}
+
 .opacity_wrapper{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
