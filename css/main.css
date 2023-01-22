@@ -52,7 +52,6 @@
     align-self: center;
 }
 .body_wrapper{
-    background-image:url('../images/home_background.jpg');
     background-size: cover;
     font-size: var(--med_text);
     grid-column: 2 / 4;

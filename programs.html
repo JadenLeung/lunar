@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="//fonts.googleapis.com/css?family=Lato:400,300,300italic,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/celebration.css">
+    <link rel="stylesheet" href="css/root.css" />
+    <title>Programs of Lunar New Year Celebrations</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar_wrapper">
+        <header class="navbar">
+            <h3 class="navbar_title"><a href="index.html"><img src="images/logo.png" class="logo"></a></h3>
+            <nav>
+                <div class="mobile_icon container" onclick="openMobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                
+                <aside id="mobile_menu">
+                    <div class="icon change" onclick="closeMobileMenu(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <div class="mobile_wrapper">
+                        <li class="navbar_item navbar_link mobile_navbar_link">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="active navbar_item navbar_link mobile_navbar_link">
+                            <a href="programs.html">Programs</a>
+                        </li>
+                        <li class="navbar_item navbar_link mobile_navbar_link">
+                            <a href="buy_tickets.html">Buy Tickets</a>
+                        </li>
+
+                        <li class="navbar_item navbar_link mobile_navbar_link">
+                            <a href="sponsors.html">Sponsors</a>
+                        </li>
+                        
+                        <li class="navbar_item navbar_link mobile_navbar_link">
+                            <a href="Magic.html">Magic Show</a>
+                        </li>
+                        <li class="navbar_item navbar_link mobile_navbar_link">
+                            <a href="communityawards.html">Community Awards</a>
+                        </li> 
+                </div>
+                </aside>
+
+                <ul class="navbar_links_list">
+                    <li class="navbar_item navbar_link">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="active navbar_item navbar_link">
+                        <a href="programs.html">Programs</a>
+                    </li>
+                    <li class="navbar_item navbar_link">
+                        <a href="buy_tickets.html">Buy Tickets</a>
+                    </li>
+
+                    <li class="navbar_item navbar_link">
+                        <a href="sponsors.html">Sponsors</a>
+                    </li>
+                    <li class="navbar_item navbar_link">
+                        <a href="Magic.html">Magic Show</a>
+                    </li>
+                    <li class="navbar_item navbar_link">
+                        <a href="communityawards.html">Community Awards</a>
+                    </li>
+                </ul> 
+            </nav>
+        </header>
+    </div>
+
+
+    <!-- Title -->
+    <div class = "bigger_wrapper">
+        <div class="celebration_description_wrapper wrapper">
+            <div class = "opacity_wrapper wrapper wrapper">
+            <h1 class="blurb">
+                Programs of Lunar New Year Celebration
+            </h1>
+            <!--
+            <h3 class="blurb">
+                <i>5:00 PM - 8:30 PM</i>
+            </h3>
+        -->
+        </div>
+    </div>
+
+   
+    <!-- Row 1 -->
+    <div class="row_2">
+        <div class="image_description_wrapper wrapper">
+            <div class = "photo_wrapper wrapper wrapper">
+                Click the image to download the program in PDF. 
+                <a href="./docs/LNY23 Program Sheet.pdf" target="_blank"> <img src = "images/LNY23 Program PNG.png" class="flyer"> </a>
+            </div>
+        </div>
+        <div class="image_description_wrapper wrapper">
+            <h3 class="blurb wrapper">
+                Cultural Programs of the Lunar New Year Celebrations!
+            </h3>
+            <h3 class="register">
+                <a class="learn_more socials" href="https://online.pubhtml5.com/sfmsv/cnfy/" target="_blank">
+                    Learn More
+                </a>
+            </h3>
+        </div>
+    </div>
+
+    <!-- Row 2 -->
+    <!--
+    <div class="cultural_wrapper wrapper">
+        <h2 class="cultural_title blurb">
+            Cultural Festival
+        </h2>
+        <p class="festival_description wrapper blurb">
+            After the run, come to celebrate a culmination of AAPI history, art, and 
+            food at LHS Field House and enjoy AAPI sampling food, AAPI fun events, ice cream and family time.
+        </p>
+    </div>
+    -->
+    <!-- Footer -->
+    <!--
+    <div class="wrapper">
+        <p class="sponsor_description blurb">
+            AAPI 5K Run 'N' Walk and Festival is organized by the Chinese American Association of Lexington (CAAL),  
+            Lexington Hey Runners Club; Funded by Community Endowment of Lexington, Mass Cultural Council, 
+            and Civic Leadership Academy; Co-sponsored by Lexington AAPI Youth Team, the Town of Lexington, 
+            Lexington Human Rights Committee, Indian Americans of Lexington (IAL), Japanese Support Group of Lexington (JPLex), 
+            Korean-American Organization of Lexington (KOLex), Association of Black Citizens of Lexington (ABCL), and LHS Asian Student Union (ASU).
+        </p>
+    </div>
+    -->
+    <p hidden>
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=5m720Sv1Zh-HLRKKQpik4gZkCFPe6Sa7ff13-BRKMBs&cl=ffffff&w=a"></script>
+    </p>
+</body>
+<script>
+    function openMobileMenu(x) {
+        document.getElementById("mobile_menu").style.opacity = 100;
+        document.getElementById("mobile_menu").style.top = 0;
+    }
+
+    function closeMobileMenu(x) {
+        document.getElementById("mobile_menu").style.opacity = 0;
+        document.getElementById("mobile_menu").style.top = "-100%";
+    }
+</script>
+</html>
