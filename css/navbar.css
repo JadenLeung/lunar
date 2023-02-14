@@ -97,7 +97,7 @@ li {
 /* Creating a dropdown menu */
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: inline-block; 
 }
 .dropdown-content {
     display: none;
@@ -195,7 +195,7 @@ li {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-@media (min-width: 1051px) {
+@media (min-width: 1171px) {
     .mobile_icon {
         display: none;
         position: absolute;
@@ -209,7 +209,7 @@ li {
     }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1170px) {
     .navbar_links_list {
         display: none;
     }
