@@ -14,7 +14,7 @@ body {
     font-size: var(--med_text);
     grid-column: 2 / 4;
     width:100%;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .opacity_wrapper{
     width: 100%;

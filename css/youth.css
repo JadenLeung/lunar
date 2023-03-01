@@ -1,0 +1,115 @@
+/* Three columns side by side */
+.youthcolumn {
+    float: left;
+    position: relative;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  /* panelist stuff */
+  .panel_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    background-color: var(grey);
+}
+  .panelist_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    padding: 5px;
+    background-color: var(white);
+    color: var(--dark);
+}
+@media screen and (max-width: 1350px) {
+    .panelist_wrapper {
+        flex-direction: column;
+    }
+    .panelist {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .panelist_width {
+        min-width: 0px;
+        width: 80%;
+    }
+}
+.panelist_description {
+    font-size: var(--small_text);
+    color: black;
+}
+  
+  /* Some left and right padding inside the container */
+  .youthcontainer {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: rgb(250, 188, 112); 
+  }
+  .text {
+    color: rgb(250, 188, 112); 
+ }
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  .imgcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .imgcenter2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .bio_description_wrapper {
+    background-color: rgb(124, 124, 124);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    font-size: 25px;
+    grid-column: 2 / 4;
+    width:100%;
+    margin-top: 0px;
+} 
+img.rounded-corners {
+    border-radius: 30px;
+  }
