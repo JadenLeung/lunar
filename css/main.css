@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 .header {
-    margin: 20px;
     text-align: center;
     font-size: var(--title_text);
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 50px;
+    margin-top: 30px;
 }
 .subheader {
     font-size: var(--subtitle_text);
