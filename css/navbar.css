@@ -66,12 +66,6 @@ li {
     font-weight: bold;
 }
 
-.navbar_link a:hover {
-    color: var(--logo_orange);
-    text-decoration: underline;
-    font-size: 15.5px;
-}
-
 .active a {
     border-bottom: 3px solid var(--orange_2);
     font-weight: bolder;
@@ -228,9 +222,10 @@ li {
         display: none;
     }
 
-    .mobile_navbar_link a:hover {
-        color: var(--orange_3);
-        font-size: 27px;
+    .navbar_link a:hover {
+        color: var(--logo_orange);
+        text-decoration: underline;
+        font-size: 15.5px;
     }
 }
 
