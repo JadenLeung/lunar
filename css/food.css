@@ -240,12 +240,11 @@ body {
     color: var(--dark);
 }
 .panelist {
-    max-width: 400px;
-    max-height: 700px;
-    border: 1px solid var(--dark);
     background-color: var(--light);
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
     display: flex;
     flex-direction: column;
@@ -260,10 +259,6 @@ body {
 @media screen and (max-width: 1350px) {
     .panelist_wrapper {
         flex-direction: column;
-    }
-    .panelist {
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
     .panelist_width {
         min-width: 0px;
