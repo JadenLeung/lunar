@@ -152,19 +152,16 @@
         </p>
     </div>
     -->
-    <p hidden>
-        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=PpZIdTcsoQDIw8E_Iuh90jqKn1yYuZQtSnnp65lsFdE"></script>
-    </p>
+    <script>
+        function openMobileMenu(x) {
+            document.getElementById("mobile_menu").style.opacity = 100;
+            document.getElementById("mobile_menu").style.top = 0;
+        }
+    
+        function closeMobileMenu(x) {
+            document.getElementById("mobile_menu").style.opacity = 0;
+            document.getElementById("mobile_menu").style.top = "-100%";
+        }
+    </script>
 </body>
-<script>
-    function openMobileMenu(x) {
-        document.getElementById("mobile_menu").style.opacity = 100;
-        document.getElementById("mobile_menu").style.top = 0;
-    }
-
-    function closeMobileMenu(x) {
-        document.getElementById("mobile_menu").style.opacity = 0;
-        document.getElementById("mobile_menu").style.top = "-100%";
-    }
-</script>
 </html>
