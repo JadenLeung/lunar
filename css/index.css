@@ -1,0 +1,62 @@
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 32px auto;
+  max-width: 1000px;
+}
+
+.sponsor-grid div {
+  padding: 32px;
+  border-radius: 8px;
+  border: 1px solid #b25c34;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sponsor-grid img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.sponsor-name {
+  margin-top: 16px;
+  width: 100%;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+}
+
+.text-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.text-container p {
+  font-family: "Playfair Display", serif;
+}
+
+@media (width <= 1024px) {
+  .sponsor-grid {
+    margin: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .text-container {
+    margin: 0 40px;
+  }
+}
+
+@media (width <= 640px) {
+  .sponsor-grid {
+    margin: 20px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .sponsor-name {
+    font-size: 24px;
+  }
+}
