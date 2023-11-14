@@ -4,90 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,300,300italic,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/history.css" />
     <link rel="stylesheet" href="css/interview.css" />
     <link rel="stylesheet" href="css/root.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/timeline.css" />
-    <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/sponsors.css" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Sponsors</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <div class="navbar_wrapper">
-        <header class="navbar">
-            <h3 class="navbar_title"><a href="index.html"><img src="images/logo.png" class="logo"></a></h3>
-            <nav>
-                <div class="mobile_icon container" onclick="openMobileMenu(this)">
-                    <svg width="35px" height="35px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M3 5h18M3 12h18M3 19h18" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                </div>
-                
-                <aside id="mobile_menu">
-                    <div class="icon change" onclick="closeMobileMenu(this)">
-                        <svg width="45px" height="45px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                    </div>
-                    <div class="mobile_wrapper">
-                        <li class="active navbar_item navbar_link mobile_navbar_link">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="navbar_item navbar_link mobile_navbar_link">
-                            <a href="gallery.html">Event Gallery</a>
-                        </li>
-                        <li class="navbar_item navbar_link mobile_navbar_link">
-                            <a href="eventteam.html">Event Team</a>
-                        </li>
-                        <li class="navbar_item navbar_link mobile_navbar_link">
-                            <a href="youthteam.html">Youth Team</a>
-                        </li>
-
-                        <li class="navbar_item navbar_link mobile_navbar_link">
-                            <a href="sponsors.html">Sponsors</a>
-                        </li> 
-
-                        <li class="navbar_item navbar_link mobile_navbar_link">
-                            <a href="Magic.html">Magic Show</a>
-                        </li> 
-                        <li class="navbar_item navbar_link mobile_navbar_link">
-                            <a href="communityawards.html">Community Awards</a>
-                        </li> 
-                </div>
-                </aside>
-
-                <ul class="navbar_links_list">
-                    <li class="active navbar_item navbar_link">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="navbar_item navbar_link">
-                        <a href="gallery.html">Event Gallery</a>
-                    </li>
-                    <li class="navbar_item navbar_link">
-                        <a href="eventteam.html">Event Team</a>
-                    </li>
-                    <li class="navbar_item navbar_link">
-                        <a href="youthteam.html">Youth Team</a>
-                    </li>
-                    <li class="navbar_item navbar_link">
-                        <a href="sponsors.html">Sponsors</a>
-                    </li>
-
-                    <li class="navbar_item navbar_link">
-                        <a href="Magic.html">Magic Show</a>
-                    </li>
-                    <li class="navbar_item navbar_link">
-                        <a href="communityawards.html">Community Awards</a>
-                    </li>
-
-                </ul> 
-            </nav>
-        </header>
-    </div>
+    <nav>
+        <a href="index.html" class="nav-logo-link"><img src="images/logo.png"></a>
+        <button id="nav-toggle">
+            <svg width="35px" height="35px" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg" color="#000000" id="close-icon">
+                <path d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"
+                    stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <svg width="35px" height="35px" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg" color="#000000" id="open-icon">
+                <path d="M3 5h18M3 12h18M3 19h18" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+            </svg>
+        </button>
+        <ul>
+            <li class="navbar_item navbar_link mobile_navbar_link">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="navbar_item navbar_link mobile_navbar_link">
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li class="navbar_item navbar_link mobile_navbar_link">
+                <a href="youthteam.html">Youth Team</a>
+            </li>
+            <li class="active navbar_item navbar_link mobile_navbar_link">
+                <a href="sponsors.html">Sponsors</a>
+            </li>
+            <li class="navbar_item navbar_link mobile_navbar_link">
+                <a href="Magic.html">Magic Show</a>
+            </li>
+            <li class="navbar_item navbar_link mobile_navbar_link">
+                <a href="communityawards.html">Community Awards</a>
+            </li>
+        </ul>
+    </nav>
     <!-- Row 1 -->
     <div class="flex">
         <div class="history_description_wrapper wrapper">

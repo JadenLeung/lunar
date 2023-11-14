@@ -1,82 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,300,300italic,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel=’stylesheet’/>
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:400,300,300italic,700,400italic,700italic&amp;subset=latin,latin-ext"
+        rel="stylesheet" type="text/css">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/timeline.css" />
-    <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/root.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>2023 Lunar New Year</title>
 </head>
-<body>
-    <!-- Navbar -->
-    <div class="navbar_wrapper">
-        <header class="navbar">
-            <h3 class="navbar_title"><a href="index.html"><img src="images/logo.png" class="logo"></a></h3>
-            <nav>
-                <div class="mobile_icon container" onclick="openMobileMenu(this)">
-                    <svg width="35px" height="35px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M3 5h18M3 12h18M3 19h18" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                </div>
-                
-                <aside id="mobile_menu">
-                    <div class="icon change" onclick="closeMobileMenu(this)">
-                        <svg width="45px" height="45px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                    </div>
-                    <div class="mobile_wrapper">
-                        <li class="active navbar_item navbar_link mobile_navbar_link">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="navbar_item navbar_link mobile_navbar_link">
-                            <a href="gallery.html">Event Gallery</a>
-                        </li>
-                        <li class="navbar_item navbar_link mobile_navbar_link">
-                            <a href="eventteam.html">Event Team</a>
-                        </li>
-                        <li class="navbar_item navbar_link mobile_navbar_link">
-                            <a href="youthteam.html">Youth Team</a>
-                        </li>
-                        <li class="navbar_item navbar_link mobile_navbar_link">
-                            <a href="sponsors.html">Sponsors</a>
-                        </li>
-                        <li class="navbar_item navbar_link mobile_navbar_link">
-                            <a href="Magic.html">Magic Show</a>
-                        </li>
-                        <li class="navbar_item navbar_link mobile_navbar_link">
-                            <a href="communityawards.html">Community Awards</a>
-                        </li>
-                    </div>
-                </aside>
 
-                <ul class="navbar_links_list">
-                    <li class="active navbar_item navbar_link">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="navbar_item navbar_link">
-                        <a href="programs.html">Programs</a>
-                    </li>
-                    <li class="navbar_item navbar_link">
-                        <a href="buy_tickets.html">Buy Tickets</a>
-                    </li>
-                    <li class="navbar_item navbar_link">
-                        <a href="sponsors.html">Sponsors</a>
-                    </li>
-                    <li class="navbar_item navbar_link">
-                        <a href="Magic.html">Magic Show</a>
-                    </li>
-                    <li class="navbar_item navbar_link">
-                        <a href="communityawards.html">Community Awards</a>
-                    </li>
-                </ul> 
-            </nav>
-        </header>
-    </div>
+<body>
+    <nav>
+        <a href="index.html" class="nav-logo-link"><img src="images/logo.png" ></a>
+        <button id="nav-toggle">
+            <svg width="35px" height="35px" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg" color="#000000" id="close-icon">
+                <path d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"
+                    stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <svg width="35px" height="35px" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg" color="#000000" id="open-icon">
+                <path d="M3 5h18M3 12h18M3 19h18" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+            </svg>
+        </button>
+        <ul>
+            <li class="active navbar_item navbar_link mobile_navbar_link">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="navbar_item navbar_link mobile_navbar_link">
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li class="navbar_item navbar_link mobile_navbar_link">
+                <a href="youthteam.html">Youth Team</a>
+            </li>
+            <li class="navbar_item navbar_link mobile_navbar_link">
+                <a href="sponsors.html">Sponsors</a>
+            </li>
+            <li class="navbar_item navbar_link mobile_navbar_link">
+                <a href="Magic.html">Magic Show</a>
+            </li>
+            <li class="navbar_item navbar_link mobile_navbar_link">
+                <a href="communityawards.html">Community Awards</a>
+            </li>
+        </ul>
+    </nav>
 
     <!-- Main Title -->
     <div class="main_wrapper banner">
@@ -86,9 +61,12 @@
                     <img src="images/Sponsors/图片1.png" alt="北美生活通" style="width: 40%">
                 </a>
                 <h1 class="header">2023 Lunar New Year<br>Celebration Gala</h1>
-                
-                <a class="learn_more" style="display: inline-block" href="https://drive.google.com/file/d/17dFpiaNoht5-bHn4en5Wyrim0xml3c7G/view?usp=share_link">Program Book</a>
-                
+
+                <a class="learn_more" style="display: inline-block"
+                    href="https://drive.google.com/file/d/17dFpiaNoht5-bHn4en5Wyrim0xml3c7G/view?usp=share_link">
+                    Program Book
+                </a>
+
                 <p class="subheader" style="margin: 20px">
                     A 40-year CAAL tradition is back in-person and better than ever!
                 </p>
@@ -98,7 +76,7 @@
     </div>
 
     <!-- Timeline Section -->
-    <div class = "body_wrapper wrapper">
+    <div class="body_wrapper wrapper">
         <div class="timeline">
             <div class="timeline_container left">
                 <div class="content box_1">
@@ -109,7 +87,8 @@
                     </div>
                     <p>
                         5:00 - 6:30 pm: A Cross-cultural New Year Fair and Food<br />
-                        6:30 - 8:00 pm: Performance featuring the premiere of a dance program and other performances from the community
+                        6:30 - 8:00 pm: Performance featuring the premiere of a dance program and other performances
+                        from the community
                     </p>
                     <a class="learn_more" href="buy_tickets.html">Buy Tickets!</a>
                 </div>
@@ -128,28 +107,6 @@
                     <a class="learn_more" href="http://caal-ma.org/lny2023lantern/">Learn more</a>
                 </div>
             </div>
-        <!--
-            <div class="timeline_container left">
-                <div class="content box_3">
-                    <div class="timeline_header">
-                        <h2>Food Week - Online</h2>
-                        <h4>May 21 - May 27</h4>
-                    </div>
-                    <p>Explore the cultural nuances of AAPI food through our community!</p>
-                    <a class="learn_more" href="food_week.html">Learn more</a>
-                </div>
-            </div>
-            <div class="timeline_container right">
-                <div class="content box_4">
-                    <div class="timeline_header">
-                        <h2>Celebration Week - Lexington High School</h2>
-                        <h4>May 30</h4>
-                    </div>
-                    <p>Celebrate AAPI culture with us featuring food, music, games and a 5K Run ‘n’ Walk!</p>
-                    <a class="learn_more" href="celebration_week.html">Learn more</a>
-                </div>
-            </div>
-        -->
         </div>
     </div>
 
@@ -207,12 +164,12 @@
     <!-- Sponsors -->
     <div class="sponsor_row">
         <h1 class="header flex">Special Thanks To Our Title Sponsor</h1>
-        <div class = "sponsors photo_wrapper wrapper " style = "display: flex; text-align:center; flex-direction: row; justify-content: space-around; padding-top: 40px;">
-          
-            <iframe width="500px;" height = "340px"
-                src="https://www.youtube.com/embed/qKYl1ADL634">
+        <div class="sponsors photo_wrapper wrapper "
+            style="display: flex; text-align:center; flex-direction: row; justify-content: space-around; padding-top: 40px;">
+
+            <iframe width="500px;" height="340px" src="https://www.youtube.com/embed/qKYl1ADL634">
             </iframe>
-            <img src="images/Sponsors/Reiz 北美生活通.png" style="width: 500px;" class="logo">      
+            <img src="images/Sponsors/Reiz 北美生活通.png" style="width: 500px;" class="logo">
             <!--
             <div class="sponsor_wrapper">
                 <img src="images/Sponsors/cary.png" style="width: 100px;" class="logo">
@@ -342,18 +299,28 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <div class="footer2">
-        <p>Managed by Sophia Zhou (team lead), Joley Leung (graphic designer), Bowen Xiao (website designer), Sophia Guo (website designer), and Jaden Leung (mentor)</p>
+    <footer>
+        <p>Managed by Sophia Zhou (team lead), Joley Leung (graphic designer), Bowen Xiao (website designer), Sophia Guo
+            (website designer), and Jaden Leung (mentor)</p>
         <div style="text-align: right;">
-            <a href="https://www.facebook.com/CAAL1983/" target="__blank" class="xfooter_link">
-                <img src="images/Footer/facebook.png" style="width: 35px;" class="logo">
+            <a href="https://www.facebook.com/CAAL1983/" target="__blank" style="text-decoration: none;">
+                <svg width="35px" height="35px" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" color="#000000">
+                    <path
+                        d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
+                        stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
             </a>
-            <a href="https://twitter.com/CAALsince1983" target="__blank" class="xfooter_link">
-                <img src="images/Footer/twitter-sign.png" style="width: 35px;" class="logo">
+            <a href="https://twitter.com/CAALsince1983" target="__blank" style="text-decoration: none;">
+                <svg width="35px" height="35px" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" color="#000000">
+                    <path
+                        d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z"
+                        stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
             </a>
         </div>
-    </div>
+    </footer>
     <script src="navigation.js"></script>
 </body>
 </html>

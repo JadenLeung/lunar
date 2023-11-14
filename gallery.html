@@ -1,106 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,300,300italic,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel=’stylesheet’/>
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:400,300,300italic,700,400italic,700italic&amp;subset=latin,latin-ext"
+        rel="stylesheet" type="text/css">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/timeline.css" />
-    <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.min.css"
+        integrity="sha512-LFWtdAXHQuwUGH9cImO9blA3a3GfQNkpF2uRlhaOpSbDevNyK1rmAjs13mtpjvWyi+flP7zYWboqY+8Mkd42xA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Lunar New Year Gala Gallery</title>
 </head>
+
 <body>
-    <!-- Navbar -->
-    <div class="navbar_wrapper">
-        <header class="navbar">
-            <h3 class="navbar_title"><a href="index.html"><img src="images/logo.png" class="logo"></a></h3>
-            <nav>
-                <div class="mobile_icon container" onclick="openMobileMenu(this)">
-                    <svg width="35px" height="35px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M3 5h18M3 12h18M3 19h18" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                </div>
-                
-                <aside id="mobile_menu">
-                    <div class="icon change" onclick="closeMobileMenu(this)">
-                        <svg width="45px" height="45px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                    </div>
-                    <div class="mobile_wrapper">
-                        <li class="navbar_item navbar_link mobile_navbar_link">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="active navbar_item navbar_link mobile_navbar_link">
-                            <a href="gallery.html">Event Gallery</a>
-                        </li>
-                        <li class="navbar_item navbar_link mobile_navbar_link">
-                            <a href="eventteam.html">Event Team</a>
-                        </li>
-                        <li class="navbar_item navbar_link mobile_navbar_link">
-                            <a href="youthteam.html">Youth Team</a>
-                        </li>
+    <nav>
+        <a href="index.html" class="nav-logo-link"><img src="images/logo.png" ></a>
+        <button id="nav-toggle">
+            <svg width="35px" height="35px" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg" color="#000000" id="close-icon">
+                <path d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"
+                    stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <svg width="35px" height="35px" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg" color="#000000" id="open-icon">
+                <path d="M3 5h18M3 12h18M3 19h18" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+            </svg>
+        </button>
+        <ul>
+            <li class="navbar_item navbar_link mobile_navbar_link">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="active navbar_item navbar_link mobile_navbar_link">
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li class="navbar_item navbar_link mobile_navbar_link">
+                <a href="youthteam.html">Youth Team</a>
+            </li>
+            <li class="navbar_item navbar_link mobile_navbar_link">
+                <a href="sponsors.html">Sponsors</a>
+            </li>
+            <li class="navbar_item navbar_link mobile_navbar_link">
+                <a href="Magic.html">Magic Show</a>
+            </li>
+            <li class="navbar_item navbar_link mobile_navbar_link">
+                <a href="communityawards.html">Community Awards</a>
+            </li>
+        </ul>
+    </nav>
 
-                        <li class="navbar_item navbar_link mobile_navbar_link">
-                            <a href="sponsors.html">Sponsors</a>
-                        </li> 
-
-                        <li class="navbar_item navbar_link mobile_navbar_link">
-                            <a href="Magic.html">Magic Show</a>
-                        </li> 
-                        <li class="navbar_item navbar_link mobile_navbar_link">
-                            <a href="communityawards.html">Community Awards</a>
-                        </li> 
-                </div>
-                </aside>
-
-                <ul class="navbar_links_list">
-                    <li class="navbar_item navbar_link">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="active navbar_item navbar_link">
-                        <a href="gallery.html">Event Gallery</a>
-                    </li>
-                    <li class="navbar_item navbar_link">
-                        <a href="eventteam.html">Event Team</a>
-                    </li>
-                    <li class="navbar_item navbar_link">
-                        <a href="youthteam.html">Youth Team</a>
-                    </li>
-                    <li class="navbar_item navbar_link">
-                        <a href="sponsors.html">Sponsors</a>
-                    </li>
-
-                    <li class="navbar_item navbar_link">
-                        <a href="Magic.html">Magic Show</a>
-                    </li>
-                    <li class="navbar_item navbar_link">
-                        <a href="communityawards.html">Community Awards</a>
-                    </li>
-
-                </ul> 
-            </nav>
-        </header>
-    </div>
-    
-    <div class="sponsor_row" style = "text-align: center">
-        <h1 class="header"><b>Event Gallery</b></h1>
-    </div>
-
-    <!-- <div class="about_row banner">
-        <div class="full_width summary_description_wrapper wrapper">
-            <h1 class="header-flex">Photo Gallery</h1>
-            <p class="about_description">
-                These photos in the gallery were taken by various volunteers during the 2023 CAAL Lunar New Year Gala.
-            </p>
-    </div>-->
-    <div class="sponsor_row" style = "text-align: center">
-        <h1 class="header-flex">Photo Gallery</h1>
+    <div class="sponsor_row" style="text-align: center">
+        <h1 class="header">Photo Gallery</h1>
         <p>
-            These photos in the gallery were taken by various volunteers during the 2023 CAAL Lunar New Year Gala.
+            Photos taken by various volunteers during the 2023 CAAL Lunar New Year Gala.
         </p>
     </div>
+
+    <div class="pswp-gallery pswp-gallery--single-column" id="gallery">
+        <a href="./final-photos/CAAL and VIP/FnNFweyWYAAc9E7.jpg" data-pswp-width="2048" data-pswp-height="1536"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/CAAL and VIP/FnNFweyWYAAc9E7.jpg" alt="" width="2048"
+                height="1536" />
+        </a>
+        <a href="./final-photos/CAAL and VIP/FnNMKijWQAISR-k.jpg" data-pswp-width="2048" data-pswp-height="1152"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/CAAL and VIP/FnNMKijWQAISR-k.jpg" alt="" width="2048"
+                height="1152" />
+        </a>
+        <a href="./final-photos/CAAL and VIP/FnNMKioWAAAsUdU.jpg" data-pswp-width="2048" data-pswp-height="1366"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/CAAL and VIP/FnNMKioWAAAsUdU.jpg" alt="" width="2048"
+                height="1366" />
+        </a>
+        <a href="./final-photos/CAAL and VIP/mmexport1674876334438.jpg" data-pswp-width="4032" data-pswp-height="3024"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/CAAL and VIP/mmexport1674876334438.jpg" alt="" width="4032"
+                height="3024" />
+        </a>
+        <a href="./final-photos/CAAL and VIP/mmexport1674876388014.jpg" data-pswp-width="1707" data-pswp-height="1280"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/CAAL and VIP/mmexport1674876388014.jpg" alt="" width="1707"
+                height="1280" />
+        </a>
+        <a href="./final-photos/CAAL and VIP/mmexport1674876393450.jpg" data-pswp-width="1707" data-pswp-height="1280"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/CAAL and VIP/mmexport1674876393450.jpg" alt="" width="1707"
+                height="1280" />
+        </a>
+        <a href="./final-photos/CAAL and VIP/mmexport1674876611298.jpg" data-pswp-width="2999" data-pswp-height="2000"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/CAAL and VIP/mmexport1674876611298.jpg" alt="" width="2999"
+                height="2000" />
+        </a>
+        <a href="./final-photos/CAAL and VIP/thumbnail.jpg" data-pswp-width="1080" data-pswp-height="720"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/CAAL and VIP/thumbnail.jpg" alt="" width="1080" height="720" />
+        </a>
+    </div>
+
+    <h2 class="header">Culture Fair</h2>
+    <div class="pswp-gallery pswp-gallery--single-column" id="gallery">
+        <a href="./final-photos/Culture fair/FnNFwezWQAIQewB.jpg" data-pswp-width="2048" data-pswp-height="1536"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Culture fair/FnNFwezWQAIQewB.jpg" alt="" width="2048"
+                height="1536" />
+        </a>
+        <a href="./final-photos/Culture fair/FnNFwezXgAI_iPv.jpg" data-pswp-width="1536" data-pswp-height="2048"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Culture fair/FnNFwezXgAI_iPv.jpg" alt="" width="1536"
+                height="2048" />
+        </a>
+        <a href="./final-photos/Culture fair/FnNJHQ7XoAIWkLC.jpg" data-pswp-width="1536" data-pswp-height="2048"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Culture fair/FnNJHQ7XoAIWkLC.jpg" alt="" width="1536"
+                height="2048" />
+        </a>
+    </div>
+
+    <h2 class="header">Dance</h2>
+    <div class="pswp-gallery pswp-gallery--single-column" id="gallery">
+        <a href="./final-photos/Dances/节目10.jpg" data-pswp-width="1170" data-pswp-height="774" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Dances/节目10.jpg" alt="" width="1170" height="774" />
+        </a>
+        <a href="./final-photos/Dances/节目11.JPG" data-pswp-width="5472" data-pswp-height="3648" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Dances/节目11.JPG" alt="" width="5472" height="3648" />
+        </a>
+        <a href="./final-photos/Dances/节目13.JPG" data-pswp-width="1923" data-pswp-height="1280" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Dances/节目13.JPG" alt="" width="1923" height="1280" />
+        </a>
+        <a href="./final-photos/Dances/节目14.JPG" data-pswp-width="4664" data-pswp-height="2685" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Dances/节目14.JPG" alt="" width="4664" height="2685" />
+        </a>
+        <a href="./final-photos/Dances/节目16.JPG" data-pswp-width="3000" data-pswp-height="2000" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Dances/节目16.JPG" alt="" width="3000" height="2000" />
+        </a>
+        <a href="./final-photos/Dances/节目17.JPG" data-pswp-width="3000" data-pswp-height="2000" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Dances/节目17.JPG" alt="" width="3000" height="2000" />
+        </a>
+        <a href="./final-photos/Dances/节目18.jpg" data-pswp-width="5472" data-pswp-height="3648" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Dances/节目18.jpg" alt="" width="5472" height="3648" />
+        </a>
+        <a href="./final-photos/Dances/节目19.jpg" data-pswp-width="1170" data-pswp-height="668" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Dances/节目19.jpg" alt="" width="1170" height="668" />
+        </a>
+        <a href="./final-photos/Dances/节目19的第二张.JPG" data-pswp-width="4347" data-pswp-height="2513" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Dances/节目19的第二张.JPG" alt="" width="4347" height="2513" />
+        </a>
+        <a href="./final-photos/Dances/节目20.jpg" data-pswp-width="1170" data-pswp-height="705" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Dances/节目20.jpg" alt="" width="1170" height="705" />
+        </a>
+        <a href="./final-photos/Dances/节目21.jpg" data-pswp-width="1170" data-pswp-height="686" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Dances/节目21.jpg" alt="" width="1170" height="686" />
+        </a>
+        <a href="./final-photos/Dances/节目22.jpg" data-pswp-width="1620" data-pswp-height="1080" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Dances/节目22.jpg" alt="" width="1620" height="1080" />
+        </a>
+        <a href="./final-photos/Dances/节目4.jpg" data-pswp-width="5609" data-pswp-height="3632" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Dances/节目4.jpg" alt="" width="5609" height="3632" />
+        </a>
+        <a href="./final-photos/Dances/节目6.JPG" data-pswp-width="3000" data-pswp-height="1999" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Dances/节目6.JPG" alt="" width="3000" height="1999" />
+        </a>
+        <a href="./final-photos/Dances/节目7.JPG" data-pswp-width="5468" data-pswp-height="2732" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Dances/节目7.JPG" alt="" width="5468" height="2732" />
+        </a>
+        <a href="./final-photos/Dances/节目7的第二张.jpg" data-pswp-width="1623" data-pswp-height="1080" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Dances/节目7的第二张.jpg" alt="" width="1623" height="1080" />
+        </a>
+        <a href="./final-photos/Dances/节目8.JPG" data-pswp-width="4745" data-pswp-height="3163" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Dances/节目8.JPG" alt="" width="4745" height="3163" />
+        </a>
+        <a href="./final-photos/Dances/节目8的第二张.jpg" data-pswp-width="1170" data-pswp-height="647" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Dances/节目8的第二张.jpg" alt="" width="1170" height="647" />
+        </a>
+    </div>
+
+    <h2 class="header">Food</h2>
+    <div class="pswp-gallery pswp-gallery--single-column" id="gallery">
+        <a href="./final-photos/Food/mmexport1674876452120.jpg" data-pswp-width="4032" data-pswp-height="3024"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Food/mmexport1674876452120.jpg" alt="" width="4032"
+                height="3024" />
+        </a>
+    </div>
+
+    <h2 class="header">Magic</h2>
+    <div class="pswp-gallery pswp-gallery--single-column" id="gallery">
+        <a href="./final-photos/Magic/FnNJHQ7WQAAnUod.jpg" data-pswp-width="1366" data-pswp-height="2048"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Magic/FnNJHQ7WQAAnUod.jpg" alt="" width="1366" height="2048" />
+        </a>
+        <a href="./final-photos/Magic/mmexport1674876416525.jpg" data-pswp-width="1702" data-pswp-height="1276"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Magic/mmexport1674876416525.jpg" alt="" width="1702"
+                height="1276" />
+        </a>
+        <a href="./final-photos/Magic/mmexport1674876419509.jpg" data-pswp-width="1702" data-pswp-height="1276"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Magic/mmexport1674876419509.jpg" alt="" width="1702"
+                height="1276" />
+        </a>
+        <a href="./final-photos/Magic/mmexport1674876443115.jpg" data-pswp-width="4032" data-pswp-height="3024"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Magic/mmexport1674876443115.jpg" alt="" width="4032"
+                height="3024" />
+        </a>
+    </div>
+
+    <h2 class="header">Performers</h2>
+    <div class="pswp-gallery pswp-gallery--single-column" id="gallery" style="grid-template-columns: 1fr;">
+        <a href="./final-photos/Other performances/节目23谢幕.jpg" data-pswp-width="6135" data-pswp-height="2040"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Other performances/节目23谢幕.jpg" alt="" width="6135"
+                height="2040" />
+        </a>
+    </div>
+
+    <h2 class="header">Student MCs</h2>
+    <div class="pswp-gallery pswp-gallery--single-column" id="gallery">
+        <a href="./final-photos/Student MC/6Z6A7162-min.JPG" data-pswp-width="5472" data-pswp-height="3648"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Student MC/6Z6A7162-min.JPG" alt="" width="5472"
+                height="3648" />
+        </a>
+        <a href="./final-photos/Student MC/6Z6A7429-min.JPG" data-pswp-width="5472" data-pswp-height="3648"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Student MC/6Z6A7429-min.JPG" alt="" width="5472"
+                height="3648" />
+        </a>
+        <a href="./final-photos/Student MC/IMG_8035.JPG" data-pswp-width="3000" data-pswp-height="2000" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Student MC/IMG_8035.JPG" alt="" width="3000" height="2000" />
+        </a>
+        <a href="./final-photos/Student MC/IMG_8073.jpg" data-pswp-width="1170" data-pswp-height="773" target="_blank"
+            class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Student MC/IMG_8073.jpg" alt="" width="1170" height="773" />
+        </a>
+    </div>
+    <h2 class="header">Volunteer</h2>
+    <div class="pswp-gallery pswp-gallery--single-column" id="gallery">
+
+        <a href="./final-photos/Volunteer/mmexport1674876176122.jpg" data-pswp-width="2462" data-pswp-height="3203"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Volunteer/mmexport1674876176122.jpg" alt="" width="2462"
+                height="3203" />
+        </a>
+        <a href="./final-photos/Volunteer/mmexport1674876195361.jpg" data-pswp-width="4032" data-pswp-height="3024"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Volunteer/mmexport1674876195361.jpg" alt="" width="4032"
+                height="3024" />
+        </a>
+        <a href="./final-photos/Volunteer/mmexport1674876199928.jpg" data-pswp-width="1512" data-pswp-height="2016"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Volunteer/mmexport1674876199928.jpg" alt="" width="1512"
+                height="2016" />
+        </a>
+        <a href="./final-photos/Volunteer/mmexport1674876326005.jpg" data-pswp-width="1702" data-pswp-height="1276"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Volunteer/mmexport1674876326005.jpg" alt="" width="1702"
+                height="1276" />
+        </a>
+        <a href="./final-photos/Volunteer/mmexport1674876348690.jpg" data-pswp-width="4032" data-pswp-height="3024"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Volunteer/mmexport1674876348690.jpg" alt="" width="4032"
+                height="3024" />
+        </a>
+        <a href="./final-photos/Volunteer/mmexport1674876355780.jpg" data-pswp-width="1702" data-pswp-height="1276"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Volunteer/mmexport1674876355780.jpg" alt="" width="1702"
+                height="1276" />
+        </a>
+        <a href="./final-photos/Volunteer/mmexport1674876358646.jpg" data-pswp-width="1280" data-pswp-height="1707"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Volunteer/mmexport1674876358646.jpg" alt="" width="1280"
+                height="1707" />
+        </a>
+        <a href="./final-photos/Volunteer/mmexport1674876368427.jpg" data-pswp-width="1702" data-pswp-height="1276"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Volunteer/mmexport1674876368427.jpg" alt="" width="1702"
+                height="1276" />
+        </a>
+        <a href="./final-photos/Volunteer/mmexport1674876371819.jpg" data-pswp-width="1702" data-pswp-height="1276"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Volunteer/mmexport1674876371819.jpg" alt="" width="1702"
+                height="1276" />
+        </a>
+        <a href="./final-photos/Volunteer/mmexport1674876501851.jpg" data-pswp-width="3845" data-pswp-height="2563"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Volunteer/mmexport1674876501851.jpg" alt="" width="3845"
+                height="2563" />
+        </a>
+        <a href="./final-photos/Volunteer/mmexport1674876509191.jpg" data-pswp-width="3188" data-pswp-height="2125"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Volunteer/mmexport1674876509191.jpg" alt="" width="3188"
+                height="2125" />
+        </a>
+        <a href="./final-photos/Volunteer/mmexport1674876642195.jpg" data-pswp-width="1702" data-pswp-height="1276"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Volunteer/mmexport1674876642195.jpg" alt="" width="1702"
+                height="1276" />
+        </a>
+        <a href="./final-photos/Volunteer/mmexport1674876644700.jpg" data-pswp-width="1702" data-pswp-height="1276"
+            target="_blank" class="gallery-item">
+            <img loading="lazy" src="./final-thumbnails/Volunteer/mmexport1674876644700.jpg" alt="" width="1702"
+                height="1276" />
+        </a>
+    </div>
+
+    <script type="module" src="js/gallery.js"></script>
     <script src="navigation.js"></script>
 </body>
 </html>

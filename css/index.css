@@ -37,7 +37,7 @@
 }
 
 .text-container p {
-  font-family: "Playfair Display", serif;
+  font-family: "Inter", sans-serif;
 }
 
 @media (width <= 1024px) {
