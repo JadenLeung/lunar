@@ -48,7 +48,7 @@
 }
 .panelist_description {
   font-size: var(--small_text);
-  text-align: center;
+  text-align: left;
   color: black;
 }
   
