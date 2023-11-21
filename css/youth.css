@@ -131,3 +131,11 @@ img.rounded-corners {
   max-width: 800px;
   justify-self: center;
 }
+
+
+
+.image-container {
+  flex-direction: row;
+  justify-content: space-evenly;
+  display: flex;
+}
